@@ -1,11 +1,10 @@
 #Measurement Converter v0.1
 #Inputs
 print("Measurement Converter v0.1")
-print("Write in lower case for all measurements")
 print("Inch = in, Mile = mi, Foot = ft,\nPound = lb, Stone = st, Ounce = oz,\nGallon = gl, Quart = qu, Fl. Ounce = fl oz")
-unittype = input("Type L for length, M for mass/weight,\nC for capacity, and T for temperature,\nS for speed, A for area, V for volume: ")
-unit1 = input("Measurement to convert from: ")
-unit2 = input("Measurement to convert to: ")
+unittype = input("Type L for length, M for mass/weight,\nC for capacity, and T for temperature,\nS for speed, A for area, V for volume: ").upper()
+unit1 = input("Measurement to convert from: ").lower()
+unit2 = input("Measurement to convert to: ").lower()
 value = float(input("Value: "))
 #Messages
 invalid = "What you have typed is invalid. Please type two valid measurements"
