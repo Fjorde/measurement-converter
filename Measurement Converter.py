@@ -20,6 +20,24 @@ if unittype == "L":
     elif unit1 == "ft" and unit2 == "m":
         print(valid)
         ans = float((value/100)*30.48)
+	elif unit1 == "ft" and unit2 == "in":
+		print(valid)
+		ans = float(value*12)
+	elif unit1 == "ft" and unit2 == "yd":
+		print(valid)
+		ans = float(value/3)
+	elif unit1 == "in" and unit2 == "ft":
+		print(valid)
+		ans = float(value/12)
+	elif unit1 == "in" and unit2 == "yd":
+		print(valid)
+		ans = float(value/36)
+	elif unit1 == "yd" and unit2 == "ft":
+		print(valid)
+		ans = float(value*3)
+	elif unit1 == "yd" and unit2 == "in":
+		print(valid)
+		ans = float(value*36)
     else:
         print(invalid)
     print(ans, unit2)
