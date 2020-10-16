@@ -10,6 +10,7 @@ value = float(input("Value: "))
 invalid = "What you have typed is invalid. Please type two valid measurements"
 valid = "Your measurements have been received. Calculating..."
 #Length
+#Unfinished
 if unittype == "L":
 	if unit1 == "cm" and unit2 == "m":
         print(valid)
